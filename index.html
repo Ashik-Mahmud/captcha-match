@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captch ~ Javascript Project</title>
+    <!-- Link For Custom Css  -->
+    <link rel="stylesheet" href="public/css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+
+<body>
+
+
+    <!-- Run HTML Structured Code  -->
+
+    <section>
+        <div class="captch_area">
+            <header>
+                <h3>Captch in JavaScript</h3>
+            </header>
+            <div class="captch_box">
+                <div class="captch"><img src="./public/img/captcha-bg.png" class="img-fluid" alt="captch"> <span
+                        id="captch_text"></span></div>
+                <div class="captch_btn"><i class="fas fa-redo-alt"></i></div>
+            </div>
+            <form method="POST" id="captch_form">
+                <div class="input">
+                    <input type="text" placeholder="Put Captcha here.." id="captcha_field" name="captch_field" required
+                        autocomplete="off">
+                    <button type="submit" class="check_btn">Check</button>
+                </div>
+                <span id="msg"></span>
+
+            </form>
+        </div>
+    </section>
+
+
+
+
+    <!-- Scripting Code Start Here  -->
+    <script src="./public/js/app.js"></script>
+</body>
+
+</html>
